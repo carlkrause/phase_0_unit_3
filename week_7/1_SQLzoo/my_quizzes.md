@@ -2,16 +2,9 @@
 
 ####I worked on this challenge by myself
 
-
-
 ### My Quiz Results:
-<!-- Include the link to your image (saved in the imgs folder) to display it inline. -->
-![SQLzoo quiz results](https://github.com/carlkrause/phase_0_unit_3/blob/master/week_7/images/sqlzoo_quiz.jpg)
 
-
-
-
-
+![SQLzoo quiz results](images/sqlzoo_quiz.jpg)
 
 ### Reflection
 
