@@ -29,7 +29,7 @@ This database is a rolodex of friends and some personal information about them (
 
 In this example, I've been asked to create a public relations contact/request management system. The first table includes contacts and their information (name, media affiliation, email, phone, and how long they have been in the database). There's also a table for request types (for example, a request for an interview with our organization's CEO) and a description of the request type (perhaps more enlightening information on how to handle this particular type of request). The middle table keeps a running count of the incoming requests, both with the contact id and the request type id, as well as the time contact was initiated.
 
-![alt text](https://github.com/carlkrause/phase_0_unit_3/raw/master/week_7/[images/my-schema_many-to-many.jpg)
+![alt text](https://github.com/carlkrause/phase_0_unit_3/raw/master/week_7/images/my-schema_many-to-many.jpg)
 
 ## Release 5: Reflection
 
