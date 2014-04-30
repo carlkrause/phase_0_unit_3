@@ -1,7 +1,7 @@
 # U3.W8-9: OO Basics: Student
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 
 # 2. Pseudocode
 
