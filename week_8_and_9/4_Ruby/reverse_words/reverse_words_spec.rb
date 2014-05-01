@@ -1,4 +1,4 @@
-require_relative "my_solution"
+
 
 def random_word(length = 5)
   rand(36**length).to_s(36)

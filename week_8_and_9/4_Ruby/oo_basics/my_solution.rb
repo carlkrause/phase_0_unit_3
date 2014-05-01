@@ -11,12 +11,16 @@
 
 class Student
   attr_accessor :scores, :first_name
-
+  	@scores = scores
+  	@first_name = first_name
   def initialize(args)   #Use named arguments!
     #your code here
   end
 end
 
+students = Array.new(5) {Hash.new(5)}
+first_name = ["Alex","Janice","Bill","Megan","Sarah"]
+scores = [[100,100,100,0,100],[90,90,80,90,80],[70,80,80,70,80],[90,60,80,90,70],[80,70,60,100,90]]
 
 # 4. Refactored Solution
 

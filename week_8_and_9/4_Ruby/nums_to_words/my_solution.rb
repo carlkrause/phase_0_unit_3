@@ -9,7 +9,7 @@
 
 # 3. Initial Solution
 
-
+puts in_words(4)
 
 
 # 4. Refactored Solution
