@@ -3,43 +3,43 @@ Define the following commands and describe how they work/what they do.
 
 
 #### add
-<!-- Your defnition here -->
+"git add #filename" tells Git to start tracking a file--it stages it for further action.
 
 #### branch
-<!-- Your defnition here -->
+"git branch #nameofbranch" tells Git to create a new branch for our feature or project
 
 #### checkout
-<!-- Your defnition here -->
+"git checkout #nameofbranch" tells Git to switch branches, including switching back to the master
 
 #### clone
-<!-- Your defnition here -->
+"git clone #url" clones a remote repository to the local environment
 
 #### commit
-<!-- Your defnition here -->
+"git commit -m #'message'" takes tracked files in a particular branch and takes a "snapshot" of them in their current state
 
 #### fetch
-<!-- Your defnition here -->
+"git fetch" goes to the remote repository, syncs, but does not merge it with the local version
 
 #### log
-<!-- Your defnition here -->
+"git log" provides a summary of recent changes to the branch
 
 #### merge
-<!-- Your defnition here -->
+"git merge #branchname" merges the specified branch with the current branch
 
 #### pull
-<!-- Your defnition here -->
+"git pull" fetches and syncs the local repository with the remote repository
 
 #### push
-<!-- Your defnition here -->
+"git push" updates the origin/master to be at the same state as the local repository
 
 #### reset
-<!-- Your defnition here -->
+"git reset" reverts the branch to an earlier commit
 
 #### rm
-<!-- Your defnition here -->
+"git rm" removes the file or "-r" folder
 
 #### status
-
+"git status" shows which files are tracked or untracked
 
 ## Release 3: Git Workflow
 
