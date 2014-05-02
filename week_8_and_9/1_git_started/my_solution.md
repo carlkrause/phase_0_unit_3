@@ -1,4 +1,6 @@
-## Release 2: Basic Git Commands
+I worked on this by myself.
+
+## Basic Git Commands
 Define the following commands and describe how they work/what they do.  
 
 
@@ -41,8 +43,34 @@ Define the following commands and describe how they work/what they do.
 #### status
 "git status" shows which files are tracked or untracked
 
-## Release 3: Git Workflow
+## Git Workflow
 
-- Push files to a remote repository
-- Fetch changes
-- Commit locally
+#### Push files to a remote repository
+1) Make a repo on GitHub
+2) Create a local folder with the same name
+3) Access the local folder
+4) Git initialize the local folder OR use git clone <#path>
+5) Check status for tracked/untracked files
+6) Add untracked files
+7) Commit files
+8) Add remote origin (link to GitHub repo)
+9) Push to remote repo
+
+#### Fetch changes
+1) Access local folder of branch you are interested in viewing changes to
+2) If you haven't, check remote origin
+3) git fetch <#remotename> OR for just a particular branch, git fetch <#remotename> <#branchname>
+4) Use checkout or log <#remotename> to view commits
+
+#### Commit locally
+1) Make a repo on GitHub
+2) Create a local folder with the same name
+3) Access the local folder
+4) Git initialize the local folder OR use git clone <#path>
+5) Check status for tracked/untracked files
+6) Add untracked files
+7) Commit files
+8) Don't push to remote repo quite yet. . .
+
+## Reflect
+This exercise was extremely helpful in pushing me towards using Terminal for all my Git needs. I used the Lauren Orsini Readwrite articles, as well as the CodeSchool Try Git and Git Real, to get a handle on what was going on. I noted all the different commands and it will no doubt take time and practice to have them be second-nature, but have a good understanding of commands like status, add, commit, push, and pull. It will definitely take some effort to force myself NOT to use the desktop application, but I can certainly see how using Terminal saves time and has way more options.
