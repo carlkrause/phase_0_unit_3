@@ -1,6 +1,6 @@
 // U3.W8-9: Gradebook from Names and Scores
 
-// I worked on this challenge [by myself, with:]
+// I worked on this challenge with Carl Krause, Peter Debelak.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -64,29 +64,91 @@ var officers = {
 }
 
 // Pseudocode
+//Set each candidate equal to zero; iterate through the votes object
+//In each object, check to see if object exists and if not, add to voteCount object; if value is equal to "Bob", add 1 to that object in vote count object
+//Set each value in officers to candidate who has received the most votes
 
 
 // __________________________________________
 // Initial Solution
+/*
+var voteCounter = function() {
+  for (var person in votes) {
+    for (var office in votes[person]) {
+      if (votes[person][office] in voteCount[office]) {
+        voteCount[office][votes[person][office]] += 1;
+      }
+      else {
+        voteCount[office][votes[person][office]] = 1;
+      }
+    }
+  }
+};
+
+var winner = function(){
+  for (var office in officers){
+    for (var person in voteCount[office]){
+      if (officers[office] === undefined) {
+        officers[office] = person;
+      }
+      else if (voteCount[office][person] > voteCount[office][officers[office]]){
+        officers[office] = person;            
+      }
+      else {
+      
+      }
+    }
+  }
+};
 
 
-
-
-
-
-
+voteCounter();
+winner();
+*/
 // __________________________________________
 // Refactored Solution
+var voteCounter = function() {
+  for (var person in votes) {
+    for (var office in votes[person]) {
+      if (votes[person][office] in voteCount[office]) {
+        voteCount[office][votes[person][office]] += 1;
+      }
+      else {
+        voteCount[office][votes[person][office]] = 1;
+      }
+    }
+  }
+};
 
-
-
-
-
+var winner = function(){
+  for (var office in officers){
+    for (var person in voteCount[office]){
+      if (officers[office] === undefined) {
+        officers[office] = person;
+      }
+      else if (voteCount[office][person] > voteCount[office][officers[office]]){
+        officers[office] = person;            
+      }
+      else {
+      
+      }
+    }
+  }
+  // in case of two-way ties...
+  for (var office in officers){
+      for (var person in voteCount[office]){
+          if (voteCount[office][person] === voteCount[office][officers[office]] && person != officers[office]){
+        officers[office] = [person, officers[office]];    
+      }
+  }
+};
 
 // __________________________________________
 // Reflection
 
-
+//I paired on this with Peter and it went well. Peter really knows his stuff and brought a lot of enthusiasm, which got me more excited about JavaScript.
+//I'm still kind of confused about accessing and iterating objects in JavaScript--I know what I'll be practicing and researching in the last week of Phase 0.
+//In the pairing session I felt a little behind and I think writing more pseudocode would have helped. I've really come to rely much more on pseudocode and I appreciate its value.
 
 
 
