@@ -7,9 +7,7 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 
 Do not alter the students and scores code.
 
-I worked on this challenge [by myself, with:]
-
-*/
+I worked on this challenge by myself.
 
 var students = ["Joseph", "Susan", "William", "Elizabeth"]
 
@@ -18,39 +16,68 @@ var scores = [ [80, 70, 70, 100],
                [75, 70, 80, 75],
                [100, 90, 95, 85] ]
 
-
-
-
-
-
+*/
 // __________________________________________
 // Write your code below.
 
+var students = ["Joseph", "Susan", "William", "Elizabeth"]
 
+var scores = [ [80, 70, 70, 100],
+               [85, 80, 90, 90],
+               [75, 70, 80, 75],
+               [100, 90, 95, 85] ]
 
+function average(scores) {
+  var sum = 0;
+  var length = scores.length;
+  for (var i = 0; i < length; i++) {
+      sum += scores[i];
+    }
+    return sum / length;
+}
 
-
+var gradebook = {
+  addScore: function(name, score) {
+    for (var i = 0; i < scores.length; i++) {
+      if(name === students[i]) {
+        return scores[i].push(score);
+      }
+    }
+  },
+  getAverage: function(name) {
+    for(var i=0; i<scores.length; i++){
+      if(name === students[i]) {
+        return average(scores[i]);
+      }
+    }
+  },
+  Joseph:{
+    testScores: scores[0]
+  },
+  Susan:{
+    testScores: scores[1]
+  },
+  William:{
+    testScores: scores[2]
+  },
+  Elizabeth:{
+    testScores: scores[3]
+  }
+};
 
 // __________________________________________
 // Refactored Solution
 
-
-
-
-
-
-
+//While I know the original solution is quite verbose and can definitely be refactored to be more DRY, I was happy to get all the tests to pass so I'm OK with the current solution for the moment.
 
 // __________________________________________
 // Reflect
 
-
-
-
-
-
-
-
+//Even though I did some study of JavaScript this week before diving into the challenges, I still struggled for awhile before I was able to get the code to pass the tests.
+//I tried to get too fancy and didn't stick to the simple directives laid out in the readme. I kept trying to research more complicated ways of solving the problem which
+//distracted me. I think this was a good exercise in KISS. If I'd just gone with the simple for loops from the start I would have been able to move on or at very least have
+//workeable code to refactor from.
+//Generally this was a good re-introduction to solving challenges in JavaScript.
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
